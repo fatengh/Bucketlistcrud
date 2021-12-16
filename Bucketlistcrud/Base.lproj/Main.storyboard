@@ -41,7 +41,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="aYN-e4-ciY" kind="presentation" identifier="EditSegue" id="l2S-Ws-S8B"/>
+                        <segue destination="aYN-e4-ciY" kind="show" identifier="EditSegue" id="q8z-Vi-x8J"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nSc-2i-Lpc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -53,11 +53,11 @@
             <objects>
                 <viewController id="Gw5-c6-zM3" customClass="AddViewController" customModule="Bucketlistcrud" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kc9-Mr-QbW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Cf-nS-R3w">
-                                <rect key="frame" x="16" y="68" width="288" height="34"/>
+                                <rect key="frame" x="16" y="56" width="288" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="CR2-Fl-yDd"/>
                                     <constraint firstAttribute="height" constant="34" id="Spu-MU-Rb7"/>
@@ -117,8 +117,9 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aYN-e4-ciY" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Wcm-hE-X0i"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2ZJ-8q-mQT">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -132,7 +133,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="l2S-Ws-S8B"/>
+        <segue reference="q8z-Vi-x8J"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

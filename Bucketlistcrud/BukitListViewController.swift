@@ -39,12 +39,12 @@ var MyList = ["Go to Mall", "Do Lundery" ,"Tv Show"]
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // segue to add by bar button
-        if segue.identifier == "AddSegue"{
+        if sender is UIBarButtonItem{ // Change sender.iden to avoid the error
           let navicontroller = segue.destination as! UINavigationController
           let addTbelController = navicontroller.topViewController as! AddViewController
           addTbelController.delegate = self
             // segue to edit by accessory
-        } else if segue.identifier == "EditSegue"{
+        } else if sender is IndexPath { // Change sender.iden to avoid the error
             let navicontroller = segue.destination as! UINavigationController
             let addTbelController = navicontroller.topViewController as! AddViewController
             addTbelController.delegate = self
