@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		8439F0F7276A98B900BCFD6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439F0F6276A98B900BCFD6F /* AppDelegate.swift */; };
 		8439F0F9276A98B900BCFD6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439F0F8276A98B900BCFD6F /* SceneDelegate.swift */; };
-		8439F0FB276A98B900BCFD6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439F0FA276A98B900BCFD6F /* ViewController.swift */; };
+		8439F0FB276A98B900BCFD6F /* BukitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439F0FA276A98B900BCFD6F /* BukitListViewController.swift */; };
 		8439F0FE276A98B900BCFD6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8439F0FC276A98B900BCFD6F /* Main.storyboard */; };
 		8439F100276A98BA00BCFD6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8439F0FF276A98BA00BCFD6F /* Assets.xcassets */; };
 		8439F103276A98BA00BCFD6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8439F101276A98BA00BCFD6F /* LaunchScreen.storyboard */; };
+		8439F10B276AA54D00BCFD6F /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439F10A276AA54D00BCFD6F /* AddViewController.swift */; };
+		8439F10F276AA9F500BCFD6F /* AddAndCancelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439F10E276AA9F500BCFD6F /* AddAndCancelDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8439F0F3276A98B900BCFD6F /* Bucketlistcrud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bucketlistcrud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8439F0F6276A98B900BCFD6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8439F0F8276A98B900BCFD6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8439F0FA276A98B900BCFD6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8439F0FA276A98B900BCFD6F /* BukitListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BukitListViewController.swift; sourceTree = "<group>"; };
 		8439F0FD276A98B900BCFD6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8439F0FF276A98BA00BCFD6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8439F102276A98BA00BCFD6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8439F104276A98BA00BCFD6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8439F10A276AA54D00BCFD6F /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		8439F10E276AA9F500BCFD6F /* AddAndCancelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAndCancelDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				8439F0F6276A98B900BCFD6F /* AppDelegate.swift */,
 				8439F0F8276A98B900BCFD6F /* SceneDelegate.swift */,
-				8439F0FA276A98B900BCFD6F /* ViewController.swift */,
+				8439F0FA276A98B900BCFD6F /* BukitListViewController.swift */,
+				8439F10E276AA9F500BCFD6F /* AddAndCancelDelegate.swift */,
 				8439F0FC276A98B900BCFD6F /* Main.storyboard */,
 				8439F0FF276A98BA00BCFD6F /* Assets.xcassets */,
 				8439F101276A98BA00BCFD6F /* LaunchScreen.storyboard */,
 				8439F104276A98BA00BCFD6F /* Info.plist */,
+				8439F10A276AA54D00BCFD6F /* AddViewController.swift */,
 			);
 			path = Bucketlistcrud;
 			sourceTree = "<group>";
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8439F0FB276A98B900BCFD6F /* ViewController.swift in Sources */,
+				8439F10F276AA9F500BCFD6F /* AddAndCancelDelegate.swift in Sources */,
+				8439F0FB276A98B900BCFD6F /* BukitListViewController.swift in Sources */,
 				8439F0F7276A98B900BCFD6F /* AppDelegate.swift in Sources */,
 				8439F0F9276A98B900BCFD6F /* SceneDelegate.swift in Sources */,
+				8439F10B276AA54D00BCFD6F /* AddViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -294,8 +303,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -321,8 +333,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
