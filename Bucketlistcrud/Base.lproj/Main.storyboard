@@ -25,6 +25,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="266" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -32,7 +33,7 @@
                             <outlet property="delegate" destination="68J-fJ-quo" id="vZW-ax-0h0"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="cqB-tu-iWp">
+                    <navigationItem key="navigationItem" id="cqB-tu-iWp" colorLabel="IBBuiltInLabel-Yellow">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="oU5-YU-Uf0">
                             <connections>
                                 <segue destination="aYN-e4-ciY" kind="presentation" identifier="AddSegue" id="n02-SV-2gu"/>
